@@ -1,0 +1,35 @@
+Numpy:
+	numpy.flatnonzero - zwraca indexy które mają wartości inne od 0 ze spłaszczonej tablicy
+	np.random.choice - wybierz(source, ile, replace=T/F)
+	np.random.randint(10, size=2) - losowe inty
+	Losowe rzędy
+		idx = np.random.randint(num_train, size=batch_size)
+	    X_batch = X[idx]
+	numpy.argsort - zwraca na których pozycjach byłyby dane elementy w posortowanej tablicy
+	np.vectorize(lambda) - wektoryzuje funkcję do mapowania
+	If the number of objects in the selection tuple is less than N , then  : is assumed for any subsequent dimensions.
+	b[indices, np.arange(a.shape[1])]
+	a = a.clip(min=0)
+	np.squeeze - wyrzuca wymiary które są 1
+
+Matplotlib:
+	plt.subplot(rzędów, kolumn, który wybrać)
+	plt.imshow - pokazuje obrazek
+
+Jupyter
+	Autoupdate plików
+		%load_ext autoreload
+		%autoreload 2
+
+Python:
+	duplikacja elementu
+		['Hi!'] * 4
+	można przekazywać arugmenty po nazwie kiedy się chce
+
+Pretrained model:
+	https://github.com/BVLC/caffe/wiki/Model-Zoo
+	https://github.com/tensorflow/models
+	https://github.com/pytorch/vision
+
+Używając tf.layers regularizers trzeba dodać osobno dodać od nich loss
+l2_loss = tf.losses.get_regularization_loss()
